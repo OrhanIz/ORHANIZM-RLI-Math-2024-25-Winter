@@ -45,34 +45,96 @@ $$
 
 3. Calculate the products $\mathbf{A}\cdot \mathbf{B}$; $\mathbf{B} \cdot \mathbf{A}$; $\mathbf{A} \cdot \mathbf{D}$; $\mathbf{D} \cdot \mathbf{E}$.
 
-\documentclass{article}
-\usepackage{amsmath}
-\begin{document}
 
-\title{Basic Operations on Matrices}
-\author{}
-\date{}
-\maketitle
+# Matrix Operations Solution
 
-For following matrices:
+## Given Matrices
 
 $$
-\mathbf{A}=\begin{pmatrix}1 & 2 \\ 3 & 4 \end{pmatrix} \quad
-\mathbf{B}=\begin{pmatrix}5 & 6 \\ 7 & 8 \end{pmatrix} \quad
-\mathbf{C}=\begin{pmatrix}-1 & 2 \\ 3 & 0 \end{pmatrix} \quad
-\mathbf{D}=\begin{pmatrix}-1 & 2 & 3 \\ 4 & 0 & 6 \end{pmatrix} \quad
-\mathbf{E}=\begin{pmatrix}1 & 2 \\ 4 & 5 \\ 7 & 8 \end{pmatrix}
+\begin{aligned}
+\mathbf{A} &= \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}, \quad
+\mathbf{B} = \begin{pmatrix} 5 & 6 \\ 7 & 8 \end{pmatrix}, \quad
+\mathbf{C} = \begin{pmatrix} -1 & 2 \\ 3 & 0 \end{pmatrix}, \\
+\mathbf{D} &= \begin{pmatrix} -1 & 2 & 3 \\ 4 & 0 & 6 \end{pmatrix}, \quad
+\mathbf{E} = \begin{pmatrix} 1 & 2 \\ 4 & 5 \\ 7 & 8 \end{pmatrix}.
+\end{aligned}
 $$
 
-1. Calculate: $$\mathbf{A} + \mathbf{B}, \quad \mathbf{B} - \mathbf{A}, \quad \mathbf{A} + \mathbf{C}, \quad \mathbf{D} + \mathbf{E}.$$ 
+## 1. Matrix Addition and Subtraction
 
-2. Calculate $$\frac{1}{2} \mathbf{A}, \quad 2 \mathbf{B}, \quad -3 \mathbf{C}, \quad 4 \mathbf{D}.$$ 
+### (a) $\mathbf{A} + \mathbf{B}$
 
-3. Calculate the products $$\mathbf{A} \cdot \mathbf{B}, \quad \mathbf{B} \cdot \mathbf{A}, \quad \mathbf{A} \cdot \mathbf{D}, \quad \mathbf{D} \cdot \mathbf{E}.$$ 
+$$
+\mathbf{A} + \mathbf{B} = \begin{pmatrix} 1+5 & 2+6 \\ 3+7 & 4+8 \end{pmatrix} = \begin{pmatrix} 6 & 8 \\ 10 & 12 \end{pmatrix}.
+$$
 
-\end{document}
+### (b) $\mathbf{B} - \mathbf{A}$
 
+$$
+\mathbf{B} - \mathbf{A} = \begin{pmatrix} 5-1 & 6-2 \\ 7-3 & 8-4 \end{pmatrix} = \begin{pmatrix} 4 & 4 \\ 4 & 4 \end{pmatrix}.
+$$
 
+### (c) $\mathbf{A} + \mathbf{C}$
+
+$$
+\mathbf{A} + \mathbf{C} = \begin{pmatrix} 1+(-1) & 2+2 \\ 3+3 & 4+0 \end{pmatrix} = \begin{pmatrix} 0 & 4 \\ 6 & 4 \end{pmatrix}.
+$$
+
+### (d) $\mathbf{D} + \mathbf{E}$
+
+Since the dimensions differ ($\mathbf{D}$ is $2 \times 3$ and $\mathbf{E}$ is $3 \times 2$), this operation is undefined.
+
+## 2. Scalar Multiplication
+
+### (a) $\frac{1}{2}\mathbf{A}$
+
+$$
+\frac{1}{2}\mathbf{A} = \frac{1}{2}\begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix} = \begin{pmatrix} \frac{1}{2} & 1 \\ \frac{3}{2} & 2 \end{pmatrix}.
+$$
+
+### (b) $2\mathbf{B}$
+
+$$
+2\mathbf{B} = 2\begin{pmatrix} 5 & 6 \\ 7 & 8 \end{pmatrix} = \begin{pmatrix} 10 & 12 \\ 14 & 16 \end{pmatrix}.
+$$
+
+### (c) $-3\mathbf{C}$
+
+$$
+-3\mathbf{C} = -3\begin{pmatrix} -1 & 2 \\ 3 & 0 \end{pmatrix} = \begin{pmatrix} 3 & -6 \\ -9 & 0 \end{pmatrix}.
+$$
+
+### (d) $4\mathbf{D}$
+
+$$
+4\mathbf{D} = 4\begin{pmatrix} -1 & 2 & 3 \\ 4 & 0 & 6 \end{pmatrix} = \begin{pmatrix} -4 & 8 & 12 \\ 16 & 0 & 24 \end{pmatrix}.
+$$
+
+## 3. Matrix Multiplication
+
+### (a) $\mathbf{A} \cdot \mathbf{B}$
+
+$$
+\mathbf{A} \cdot \mathbf{B} = \begin{pmatrix} 1\cdot5 + 2\cdot7 & 1\cdot6 + 2\cdot8 \\ 3\cdot5 + 4\cdot7 & 3\cdot6 + 4\cdot8 \end{pmatrix} = \begin{pmatrix} 19 & 22 \\ 43 & 50 \end{pmatrix}.
+$$
+
+### (b) $\mathbf{B} \cdot \mathbf{A}$
+
+$$
+\mathbf{B} \cdot \mathbf{A} = \begin{pmatrix} 5\cdot1 + 6\cdot3 & 5\cdot2 + 6\cdot4 \\ 7\cdot1 + 8\cdot3 & 7\cdot2 + 8\cdot4 \end{pmatrix} = \begin{pmatrix} 23 & 34 \\ 31 & 46 \end{pmatrix}.
+$$
+
+### (c) $\mathbf{A} \cdot \mathbf{D}$
+
+$$
+\mathbf{A} \cdot \mathbf{D} = \begin{pmatrix} 1\cdot(-1) + 2\cdot4 & 1\cdot2 + 2\cdot0 & 1\cdot3 + 2\cdot6 \\ 3\cdot(-1) + 4\cdot4 & 3\cdot2 + 4\cdot0 & 3\cdot3 + 4\cdot6 \end{pmatrix} = \begin{pmatrix} 7 & 2 & 15 \\ 13 & 6 & 33 \end{pmatrix}.
+$$
+
+### (d) $\mathbf{D} \cdot \mathbf{E}$
+
+$$
+\mathbf{D} \cdot \mathbf{E} = \begin{pmatrix} -1\cdot1 + 2\cdot4 + 3\cdot7 & -1\cdot2 + 2\cdot5 + 3\cdot8 \\ 4\cdot1 + 0\cdot4 + 6\cdot7 & 4\cdot2 + 0\cdot5 + 6\cdot8 \end{pmatrix} = \begin{pmatrix} 28 & 32 \\ 46 & 56 \end{pmatrix}.
+$$
 
 ## 2. Determinants 2x2 and 3x3
 
@@ -124,6 +186,110 @@ $$
 1 & 5 & 3
 \end{pmatrix}
 $$
+# Determinants of 2x2 and 3x3 Matrices
+
+## 1. Determinants for 2x2 Matrices
+
+### Matrix A
+Given:
+$$
+\mathbf{A} = \begin{pmatrix} 2 & 3 \\ 1 & 4 \end{pmatrix}
+$$  
+The determinant of $\mathbf{A}$ is computed as:
+$$
+\det(\mathbf{A}) = 2\cdot4 - 3\cdot1 = 8 - 3 = 5.
+$$
+
+### Matrix B
+Given:
+$$
+\mathbf{B} = \begin{pmatrix} 5 & 6 \\ 7 & 8 \end{pmatrix}
+$$  
+The determinant of $\mathbf{B}$ is:
+$$
+\det(\mathbf{B}) = 5\cdot8 - 6\cdot7 = 40 - 42 = -2.
+$$
+
+### Matrix C
+Given:
+$$
+\mathbf{C} = \begin{pmatrix} -1 & 2 \\ 3 & 0 \end{pmatrix}
+$$  
+The determinant of $\mathbf{C}$ is:
+$$
+\det(\mathbf{C}) = (-1)\cdot0 - 2\cdot3 = 0 - 6 = -6.
+$$
+
+## 2. Determinants for 3x3 Matrices
+
+### Matrix D
+Given:
+$$
+\mathbf{D} = \begin{pmatrix} 1 & 0 & 2 \\ -1 & 3 & 1 \\ 2 & 4 & -2 \end{pmatrix}
+$$  
+Using the formula for a 3x3 matrix,
+$$
+\det(\mathbf{D}) = a(ei - fh) - b(di - fg) + c(dh - eg),
+$$  
+where the elements are:
+$$
+a=1,\quad b=0,\quad c=2,\quad d=-1,\quad e=3,\quad f=1,\quad g=2,\quad h=4,\quad i=-2.
+$$  
+Thus,
+$$
+\det(\mathbf{D}) = 1\cdot(3\cdot(-2) - 1\cdot4) - 0\cdot((-1)\cdot(-2) - 1\cdot2) + 2\cdot((-1)\cdot4 - 3\cdot2).
+$$  
+Simplifying step by step:
+$$
+= 1\cdot(-6 - 4) + 2\cdot(-4 - 6) \\
+= 1\cdot(-10) + 2\cdot(-10) \\
+= -10 - 20 = -30.
+$$
+
+### Matrix E
+Given:
+$$
+\mathbf{E} = \begin{pmatrix} 3 & 1 & -1 \\ 0 & 2 & 4 \\ 5 & 3 & 2 \end{pmatrix}
+$$  
+The determinant is computed as:
+$$
+\det(\mathbf{E}) = 3\cdot(2\cdot2 - 4\cdot3) - 1\cdot(0\cdot2 - 4\cdot5) + (-1)\cdot(0\cdot3 - 2\cdot5).
+$$  
+Simplify the expression:
+$$
+= 3\cdot(4 - 12) - 1\cdot(0 - 20) - 1\cdot(0 - 10) \\
+= 3\cdot(-8) + 20 + 10 \\
+= -24 + 20 + 10 = 6.
+$$
+
+### Matrix F
+Given:
+$$
+\mathbf{F} = \begin{pmatrix} 2 & -3 & 1 \\ 1 & 4 & -2 \\ 1 & 5 & 3 \end{pmatrix}
+$$  
+The determinant is:
+$$
+\det(\mathbf{F}) = 2\cdot(4\cdot3 - (-2)\cdot5) - (-3)\cdot(1\cdot3 - (-2)\cdot1) + 1\cdot(1\cdot5 - 4\cdot1).
+$$  
+Breakdown each term:
+- First term: 
+  $$
+  2\cdot(12 + 10) = 2\cdot22 = 44.
+  $$
+- Second term:
+  $$
+  -(-3)\cdot(3 + 2) = 3\cdot5 = 15.
+  $$
+- Third term:
+  $$
+  1\cdot(5 - 4) = 1.
+  $$
+Thus,
+$$
+\det(\mathbf{F}) = 44 + 15 + 1 = 60.
+$$
+
+This completes the determinant calculations for the given matrices.
 
 ## 3. Determinants using Laplace's Expansion
 
