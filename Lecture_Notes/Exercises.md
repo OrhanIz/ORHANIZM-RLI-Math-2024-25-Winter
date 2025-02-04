@@ -45,7 +45,7 @@ $$
 
 3. Calculate the products $\mathbf{A}\cdot \mathbf{B}$; $\mathbf{B} \cdot \mathbf{A}$; $\mathbf{A} \cdot \mathbf{D}$; $\mathbf{D} \cdot \mathbf{E}$.
 
-4. \documentclass{article}
+\documentclass{article}
 \usepackage{amsmath}
 \begin{document}
 
@@ -54,42 +54,24 @@ $$
 \date{}
 \maketitle
 
-\section{Given Matrices}
+For following matrices:
+
 $$
-\mathbf{A}= \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}, \quad
-\mathbf{B}= \begin{pmatrix} 5 & 6 \\ 7 & 8 \end{pmatrix}, \quad
-\mathbf{C}= \begin{pmatrix} -1 & 2 \\ 3 & 0 \end{pmatrix}, \quad
-\mathbf{D}= \begin{pmatrix} -1 & 2 & 3 \\ 4 & 0 & 6 \end{pmatrix}, \quad
-\mathbf{E}= \begin{pmatrix} 1 & 2\\ 4 & 5\\ 7 & 8 \end{pmatrix}
+\mathbf{A}=\begin{pmatrix}1 & 2 \\ 3 & 4 \end{pmatrix} \quad
+\mathbf{B}=\begin{pmatrix}5 & 6 \\ 7 & 8 \end{pmatrix} \quad
+\mathbf{C}=\begin{pmatrix}-1 & 2 \\ 3 & 0 \end{pmatrix} \quad
+\mathbf{D}=\begin{pmatrix}-1 & 2 & 3 \\ 4 & 0 & 6 \end{pmatrix} \quad
+\mathbf{E}=\begin{pmatrix}1 & 2 \\ 4 & 5 \\ 7 & 8 \end{pmatrix}
 $$
 
-\section{Matrix Operations}
+1. Calculate: $$\mathbf{A} + \mathbf{B}, \quad \mathbf{B} - \mathbf{A}, \quad \mathbf{A} + \mathbf{C}, \quad \mathbf{D} + \mathbf{E}.$$ 
 
-\subsection{Addition and Subtraction}
-$$
-\mathbf{A} + \mathbf{B} = \begin{pmatrix} 6 & 8 \\ 10 & 12 \end{pmatrix}, \\
-\mathbf{B} - \mathbf{A} = \begin{pmatrix} 4 & 4 \\ 4 & 4 \end{pmatrix}, \\
-\mathbf{A} + \mathbf{C} = \begin{pmatrix} 0 & 4 \\ 6 & 4 \end{pmatrix}, \\
-\mathbf{D} + \mathbf{E} \text{ (not possible due to different dimensions)}.
-$$
+2. Calculate $$\frac{1}{2} \mathbf{A}, \quad 2 \mathbf{B}, \quad -3 \mathbf{C}, \quad 4 \mathbf{D}.$$ 
 
-\subsection{Scalar Multiplication}
-$$
-\frac{1}{2} \mathbf{A} = \begin{pmatrix} 0.5 & 1.0 \\ 1.5 & 2.0 \end{pmatrix}, \\
-2 \mathbf{B} = \begin{pmatrix} 10 & 12 \\ 14 & 16 \end{pmatrix}, \\
--3 \mathbf{C} = \begin{pmatrix} 3 & -6 \\ -9 & 0 \end{pmatrix}, \\
-4 \mathbf{D} = \begin{pmatrix} -4 & 8 & 12 \\ 16 & 0 & 24 \end{pmatrix}.
-$$
-
-\subsection{Matrix Multiplication}
-$$
-\mathbf{A} \cdot \mathbf{B} = \begin{pmatrix} 19 & 22 \\ 43 & 50 \end{pmatrix}, \\
-\mathbf{B} \cdot \mathbf{A} = \begin{pmatrix} 23 & 34 \\ 31 & 46 \end{pmatrix}, \\
-\mathbf{A} \cdot \mathbf{D} \text{ (not possible due to dimension mismatch)}, \\
-\mathbf{D} \cdot \mathbf{E} = \begin{pmatrix} 30 & 36 \\ 52 & 64 \end{pmatrix}.
-$$
+3. Calculate the products $$\mathbf{A} \cdot \mathbf{B}, \quad \mathbf{B} \cdot \mathbf{A}, \quad \mathbf{A} \cdot \mathbf{D}, \quad \mathbf{D} \cdot \mathbf{E}.$$ 
 
 \end{document}
+
 
 
 ## 2. Determinants 2x2 and 3x3
